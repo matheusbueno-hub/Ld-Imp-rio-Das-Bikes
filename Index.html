@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L&D Império Das Bikes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>L&D Império Das Bikes</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+      <a href="#">Carrinho</a>
+      <a href="#">Login</a>
+      <a href="#">Criar Conta</a>
+    </nav>
+  </header>
+
+  <!-- Barra de Pesquisa -->
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Pesquise sua bike...">
+  </div>
+
+  <!-- Catálogo de Produtos -->
+  <section class="product-list">
+    <div class="product">
+      <img src="https://via.placeholder.com/220x150?text=Bike+1" alt="Bike 1">
+      <h3>Bike Speed Laranja</h3>
+      <p>R$ 2.500,00</p>
+      <button class="add-to-cart" data-name="Bike Speed Laranja" data-price="2500">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/220x150?text=Bike+2" alt="Bike 2">
+      <h3>Mountain Bike Amarela</h3>
+      <p>R$ 3.100,00</p>
+      <button class="add-to-cart" data-name="Mountain Bike Amarela" data-price="3100">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/220x150?text=Bike+3" alt="Bike 3">
+      <h3>BMX Infantil</h3>
+      <p>R$ 1.200,00</p>
+      <button class="add-to-cart" data-name="BMX Infantil" data-price="1200">Adicionar ao Carrinho</button>
+    </div>
+  </section>
+
+  <!-- Carrinho -->
+  <div class="cart">
+    <h3>Carrinho de Compras</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: R$ <span id="total-price">0,00</span></p>
+    <button id="checkout-button">Finalizar Compra</button>
+  </div>
+
+  <footer>
+    <p>L&D Império Das Bikes &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
